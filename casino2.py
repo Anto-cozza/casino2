@@ -97,10 +97,6 @@ def gioca_roulette():
                     st.success(f"Hai vinto €{vincita}! Nuovo saldo: €{st.session_state.saldo}")
                 else:
                     st.error(f"Hai perso €{abs(vincita)}. Nuovo saldo: €{st.session_state.saldo}")
-    
-    with col2:
-        # Visualizzazione della roulette (semplificata)
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/European_Roulette_wheel.svg/500px-European_Roulette_wheel.svg.png", caption="Ruota della Roulette Europea")
 
 # Funzioni per il Blackjack
 def crea_mazzo():
@@ -259,10 +255,6 @@ def gioca_blackjack():
                         
                         if st.button("Nuova Partita", key="new_game_after_stand"):
                             st.session_state.gioco_in_corso = False
-    
-    with col2:
-        # Immagine del tavolo di Blackjack
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Blackjack_board.svg/500px-Blackjack_board.svg.png", caption="Tavolo di Blackjack")
 
 # Funzioni di analisi statistica
 def visualizza_statistiche():
